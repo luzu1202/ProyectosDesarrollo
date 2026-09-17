@@ -7,3 +7,11 @@ Proyectos semanales de desarrollo de plataformas.
 - [Ejercicio 2: formulario de registro](./Ejercicio2/)
 
 Cada ejercicio incluye su auditoria en `AUDITORIA.md`. La comprobacion automatica de sintaxis se ejecuta con GitHub Actions en cada push y pull request.
+
+## GitHub Pages
+
+El sitio publicado contiene ambos ejercicios:
+
+- [Pagina principal](https://luzu1202.github.io/ProyectosDesarrollo/)
+- [Ejercicio 1](https://luzu1202.github.io/ProyectosDesarrollo/Ejercicio1/)
+- [Ejercicio 2](https://luzu1202.github.io/ProyectosDesarrollo/Ejercicio2/)
