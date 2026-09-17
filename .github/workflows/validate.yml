@@ -1,0 +1,30 @@
+name: Validar ejercicios
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validar sintaxis JavaScript
+        run: |
+          node --check Ejercicio1/script.js
+          node --check Ejercicio2/app.js
+      - name: Verificar archivos principales
+        run: |
+          test -f Ejercicio1/index.html
+          test -f Ejercicio1/styles.css
+          test -f Ejercicio1/AUDITORIA.md
+          test -f Ejercicio2/index.html
+          test -f Ejercicio2/styles.css
+          test -f Ejercicio2/AUDITORIA.md

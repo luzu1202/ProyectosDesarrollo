@@ -1,2 +1,9 @@
 # ProyectosDesarrollo
-Proyectos semanales de desrrollo de plataformas
+Proyectos semanales de desarrollo de plataformas.
+
+## Ejercicios
+
+- [Ejercicio 1: tarjeta de presentacion](./Ejercicio1/)
+- [Ejercicio 2: formulario de registro](./Ejercicio2/)
+
+Cada ejercicio incluye su auditoria en `AUDITORIA.md`. La comprobacion automatica de sintaxis se ejecuta con GitHub Actions en cada push y pull request.
