@@ -16,10 +16,24 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Validar sintaxis JavaScript
+      - name: Probar Ejercicio 1
         run: |
           node --check Ejercicio1/script.js
+          grep -q '<main>' Ejercicio1/index.html
+          grep -q 'aria-expanded="true"' Ejercicio1/index.html
+          grep -q 'mailto:andres.luzu5@gmail.com' Ejercicio1/index.html
+      - name: Probar Ejercicio 2
+        run: |
           node --check Ejercicio2/app.js
+          grep -q 'id="registro"' Ejercicio2/index.html
+          grep -q 'aria-describedby="terminos-error"' Ejercicio2/index.html
+          grep -q 'input.setAttribute("aria-invalid"' Ejercicio2/app.js
+      - name: Probar Ejercicio 3
+        run: |
+          grep -q '<section class="galeria"' Ejercicio3/index.html
+          grep -q 'aria-label="Servicios disponibles"' Ejercicio3/index.html
+          grep -q 'id="anio"' Ejercicio3/index.html
+          grep -q 'minmax(0, 1fr)' Ejercicio3/styles.css
       - name: Verificar archivos principales
         run: |
           test -f Ejercicio1/index.html
@@ -31,5 +45,3 @@ jobs:
           test -f Ejercicio3/index.html
           test -f Ejercicio3/styles.css
           test -f Ejercicio3/AUDITORIA.md
-          grep -q 'aria-label="Servicios disponibles"' Ejercicio3/index.html
-          grep -q 'minmax(0, 1fr)' Ejercicio3/styles.css
