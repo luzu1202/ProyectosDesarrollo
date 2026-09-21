@@ -3,16 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyectos de Desarrollo</title>
+  <meta name="description" content="Colección de ejercicios de desarrollo web con HTML, CSS y JavaScript.">
+  <title>Proyectos de Desarrollo | Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Página principal">
+      <span class="brand-mark">PD</span>
+      <span>Proyectos<span class="brand-accent">Desarrollo</span></span>
+    </a>
+    <span class="header-label">Portafolio académico · 2026</span>
+  </header>
+
   <main>
-    <h1>Proyectos de Desarrollo</h1>
-    <p>Selecciona un ejercicio:</p>
-    <ul>
-      <li><a href="./Ejercicio1/">Ejercicio 1: tarjeta de presentación</a></li>
-      <li><a href="./Ejercicio2/">Ejercicio 2: formulario de registro</a></li>
-    </ul>
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="hero-content">
+        <p class="eyebrow">DESARROLLO EN PLATAFORMAS</p>
+        <h1 id="titulo-principal">Ideas que toman forma<br><span>en la web.</span></h1>
+        <p class="hero-text">Una colección de ejercicios donde cada interfaz explora una habilidad diferente: presentación, interacción y diseño responsive.</p>
+        <a class="hero-link" href="#ejercicios">Explorar proyectos <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit-core">&lt;/&gt;</div>
+        <span class="floating-tag tag-html">HTML</span>
+        <span class="floating-tag tag-css">CSS</span>
+        <span class="floating-tag tag-js">JS</span>
+      </div>
+    </section>
+
+    <section class="projects" id="ejercicios" aria-labelledby="titulo-ejercicios">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">COLECCIÓN 01 — 03</p>
+          <h2 id="titulo-ejercicios">Tres ejercicios,<br><em>tres formas de crear.</em></h2>
+        </div>
+        <p class="section-description">Selecciona un proyecto para conocer su funcionamiento y ver la implementación.</p>
+      </div>
+
+      <div class="project-grid">
+        <a class="project-card card-blue" href="./Ejercicio1/">
+          <div class="card-topline"><span>01</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <div class="project-icon" aria-hidden="true">✦</div>
+          <h3>Tarjeta de presentación</h3>
+          <p>Una página personal con navegación, perfil y una sección de habilidades interactiva.</p>
+          <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </a>
+
+        <a class="project-card card-orange" href="./Ejercicio2/">
+          <div class="card-topline"><span>02</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <div class="project-icon" aria-hidden="true">✓</div>
+          <h3>Formulario de registro</h3>
+          <p>Un formulario accesible con validación, mensajes de error y una experiencia clara.</p>
+          <div class="card-tags"><span>Forms</span><span>Validación</span><span>A11y</span></div>
+        </a>
+
+        <a class="project-card card-violet" href="./Ejercicio3/">
+          <div class="card-topline"><span>03</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <div class="project-icon" aria-hidden="true">▦</div>
+          <h3>Galería de servicios</h3>
+          <p>Una interfaz empresarial con tarjetas, CSS Grid y adaptación para cualquier pantalla.</p>
+          <div class="card-tags"><span>Grid</span><span>Responsive</span><span>UI/UX</span></div>
+        </a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <span>Hecho con curiosidad y código.</span>
+    <span>© <span id="anio"></span> · Desarrollo en Plataformas</span>
+  </footer>
+  <script>
+    document.getElementById("anio").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
