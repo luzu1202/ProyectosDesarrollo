@@ -12,9 +12,10 @@ Cada ejercicio incluye su auditoria en `AUDITORIA.md`. La comprobacion automatic
 
 ## GitHub Pages
 
-El sitio publicado contiene ambos ejercicios:
+El sitio publicado contiene los cuatro ejercicios:
 
 - [Pagina principal](https://luzu1202.github.io/ProyectosDesarrollo/)
 - [Ejercicio 1](https://luzu1202.github.io/ProyectosDesarrollo/Ejercicio1/)
 - [Ejercicio 2](https://luzu1202.github.io/ProyectosDesarrollo/Ejercicio2/)
 - [Ejercicio 3](https://luzu1202.github.io/ProyectosDesarrollo/Ejercicio3/)
+- [Ejercicio 4](https://luzu1202.github.io/ProyectosDesarrollo/Ejercicio4/)
