@@ -34,6 +34,13 @@ jobs:
           grep -q 'aria-label="Servicios disponibles"' Ejercicio3/index.html
           grep -q 'id="anio"' Ejercicio3/index.html
           grep -q 'minmax(0, 1fr)' Ejercicio3/styles.css
+      - name: Probar Ejercicio 4
+        run: |
+          node --check Ejercicio4/script.js
+          grep -q 'id="btnCargar"' Ejercicio4/index.html
+          grep -q 'aria-live="polite"' Ejercicio4/index.html
+          grep -q 'new Promise' Ejercicio4/script.js
+          grep -q 'async ()' Ejercicio4/script.js
       - name: Verificar archivos principales
         run: |
           test -f Ejercicio1/index.html
@@ -45,3 +52,6 @@ jobs:
           test -f Ejercicio3/index.html
           test -f Ejercicio3/styles.css
           test -f Ejercicio3/AUDITORIA.md
+          test -f Ejercicio4/index.html
+          test -f Ejercicio4/styles.css
+          test -f Ejercicio4/AUDITORIA.md

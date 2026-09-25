@@ -112,12 +112,14 @@ h1 span { color: var(--blue); }
 .card-blue { background: #e8efff; }
 .card-orange { background: #fff0e4; }
 .card-violet { background: #eee9ff; }
+.card-green { background: #e3f7ee; }
 .card-topline { color: #68738c; display: flex; font-size: .8rem; font-weight: 700; justify-content: space-between; }
 .arrow { font-size: 1.4rem; }
 .project-icon { align-items: center; background: white; border-radius: 12px; display: flex; font-size: 1.5rem; height: 52px; justify-content: center; margin: 38px 0 22px; width: 52px; }
 .card-blue .project-icon { color: var(--blue); }
 .card-orange .project-icon { color: var(--orange); }
 .card-violet .project-icon { color: var(--violet); }
+.card-green .project-icon { color: #249463; }
 .project-card h3 { font-size: 1.35rem; letter-spacing: -.04em; margin: 0 0 10px; }
 .project-card p { color: #647087; line-height: 1.55; margin: 0; }
 .card-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto; padding-top: 25px; }
