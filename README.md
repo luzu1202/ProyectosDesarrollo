@@ -7,15 +7,17 @@ Proyectos semanales de desarrollo de plataformas.
 - [Ejercicio 2: formulario de registro](./Ejercicio2/)
 - [Ejercicio 3: galeria de servicios](./Ejercicio3/)
 - [Ejercicio 4: simulador de servicio asincrono](./Ejercicio4/)
+- [Ejercicio 5: lista de tareas](./Ejercicio5/)
 
 Cada ejercicio incluye su auditoria en `AUDITORIA.md`. La comprobacion automatica de sintaxis se ejecuta con GitHub Actions en cada push y pull request.
 
 ## GitHub Pages
 
-El sitio publicado contiene los cuatro ejercicios:
+El sitio publicado contiene los cinco ejercicios:
 
 - [Pagina principal](https://luzu1202.github.io/ProyectosDesarrollo/)
 - [Ejercicio 1](https://luzu1202.github.io/ProyectosDesarrollo/Ejercicio1/)
 - [Ejercicio 2](https://luzu1202.github.io/ProyectosDesarrollo/Ejercicio2/)
 - [Ejercicio 3](https://luzu1202.github.io/ProyectosDesarrollo/Ejercicio3/)
 - [Ejercicio 4](https://luzu1202.github.io/ProyectosDesarrollo/Ejercicio4/)
+- [Ejercicio 5](https://luzu1202.github.io/ProyectosDesarrollo/Ejercicio5/)

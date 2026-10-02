@@ -41,6 +41,13 @@ jobs:
           grep -q 'aria-live="polite"' Ejercicio4/index.html
           grep -q 'new Promise' Ejercicio4/script.js
           grep -q 'async ()' Ejercicio4/script.js
+      - name: Probar Ejercicio 5
+        run: |
+          node --check Ejercicio5/script.js
+          grep -q 'id="tarea"' Ejercicio5/index.html
+          grep -q 'id="lista"' Ejercicio5/index.html
+          grep -q 'localStorage' Ejercicio5/script.js
+          grep -q 'textContent = texto' Ejercicio5/script.js
       - name: Verificar archivos principales
         run: |
           test -f Ejercicio1/index.html
@@ -55,3 +62,8 @@ jobs:
           test -f Ejercicio4/index.html
           test -f Ejercicio4/styles.css
           test -f Ejercicio4/AUDITORIA.md
+          test -f Ejercicio5/index.html
+          test -f Ejercicio5/styles.css
+          test -f Ejercicio5/script.js
+          test -f Ejercicio5/README.md
+          test -f Ejercicio5/AUDITORIA.md
