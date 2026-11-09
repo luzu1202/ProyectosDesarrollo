@@ -84,6 +84,10 @@ jobs:
           test -f Ejercicio6/index.html
           test -f Ejercicio6/styles.css
           test -f Ejercicio6/app.js
+          test -f Ejercicio6/README.md
+          test -f Ejercicio6/AUDITORIA.md
           test -f Ejercicio9/index.html
           test -f Ejercicio9/styles.css
           test -f Ejercicio9/script.js
+          test -f Ejercicio9/README.md
+          test -f Ejercicio9/AUDITORIA.md

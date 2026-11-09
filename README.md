@@ -11,7 +11,7 @@ Proyectos semanales de desarrollo de plataformas.
 - [Ejercicio 6: lista de tareas con jQuery](./Ejercicio6/)
 - [Ejercicio 9: back-end moderno](./Ejercicio9/)
 
-La comprobacion automatica de los ejercicios se ejecuta con GitHub Actions en cada push y pull request.
+Los ejercicios documentados incluyen un `README.md` y una `AUDITORIA.md`. La comprobacion automatica se ejecuta con GitHub Actions en cada push y pull request.
 
 ## GitHub Pages
 
