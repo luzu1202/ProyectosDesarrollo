@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de tareas con jQuery</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <h1>Mi lista de tareas (jQuery)</h1>
+  <div class="agregar">
+    <input type="text" id="tarea" placeholder="Nueva tarea">
+    <button id="agregar" type="button">Agregar</button>
+  </div>
+  <p id="mensaje" class="error" style="display:none;"></p>
+  <ul id="lista"></ul>
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="app.js" defer></script>
+</body>
+</html>

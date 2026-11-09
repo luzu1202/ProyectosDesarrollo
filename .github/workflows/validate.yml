@@ -48,6 +48,20 @@ jobs:
           grep -q 'id="lista"' Ejercicio5/index.html
           grep -q 'localStorage' Ejercicio5/script.js
           grep -q 'textContent = texto' Ejercicio5/script.js
+      - name: Probar Ejercicio 6
+        run: |
+          node --check Ejercicio6/app.js
+          grep -q 'id="tarea"' Ejercicio6/index.html
+          grep -q 'id="lista"' Ejercicio6/index.html
+          grep -q 'tareasJQ' Ejercicio6/app.js
+          grep -q 'jquery-3.7.1.min.js' Ejercicio6/index.html
+      - name: Probar Ejercicio 9
+        run: |
+          node --check Ejercicio9/script.js
+          grep -q 'id="salida"' Ejercicio9/index.html
+          grep -q 'function validarProducto' Ejercicio9/script.js
+          grep -q 'function simularPeticionPOST' Ejercicio9/script.js
+          grep -q 'function eliminarProducto' Ejercicio9/script.js
       - name: Verificar archivos principales
         run: |
           test -f Ejercicio1/index.html
@@ -67,3 +81,9 @@ jobs:
           test -f Ejercicio5/script.js
           test -f Ejercicio5/README.md
           test -f Ejercicio5/AUDITORIA.md
+          test -f Ejercicio6/index.html
+          test -f Ejercicio6/styles.css
+          test -f Ejercicio6/app.js
+          test -f Ejercicio9/index.html
+          test -f Ejercicio9/styles.css
+          test -f Ejercicio9/script.js
