@@ -1,0 +1,32 @@
+function crearApp() {
+  var rutas = [];
+  return {
+    get: function (ruta, manejador) {
+      rutas.push({ metodo: "GET", ruta: ruta, manejador: manejador });
+    },
+    manejarPeticion: function (metodo, ruta) {
+      var encontrada = rutas.find(function (r) {
+        return r.metodo === metodo && r.ruta === ruta;
+      });
+      if (!encontrada) {
+        return { status: 404, body: { error: "Ruta no encontrada" } };
+      }
+      var status = 200;
+      var body = null;
+      encontrada.manejador(
+        { metodo: metodo, ruta: ruta },
+        { json: function (data) { body = data; } }
+      );
+      return { status: status, body: body };
+    },
+  };
+}
+
+var app = crearApp();
+
+app.get("/saludo", function (req, res) {
+  res.json({ mensaje: "Hola desde el mini-servidor simulado" });
+});
+
+console.log(app.manejarPeticion("GET", "/saludo"));
+console.log(app.manejarPeticion("GET", "/no-existe"));
